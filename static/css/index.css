@@ -9,7 +9,8 @@
     text-align: center;
     justify-content: center;
     width: 100vw;
-    height: 4em;
+    /* height: 4em; */
+    overflow: hidden;
 }
 .links{
     display: flex;
