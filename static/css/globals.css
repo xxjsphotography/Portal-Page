@@ -11,12 +11,29 @@
     width: 100vw;
     /* height: 4em; */
     overflow: hidden;
+    background-color: #2f90b9;
 }
-.links{
+.footer .links{
     display: flex;
     width: 70vw;
+    margin: auto;
+    text-align: left;
+}
+
+.footer .links .links-left{
+    flex: 1;
+}
+.footer .links .links-right{
+    flex: 1;
+}
+
+.footer a{
+    text-decoration: none;
 }
 
 .footer ul,li{
     list-style: none;
+}
+.footer .copy{
+    text-align: center;
 }
