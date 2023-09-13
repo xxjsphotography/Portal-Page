@@ -1,0 +1,21 @@
+.content {
+    background-image: url("/static/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card{
+    background-color: rgba(255, 255, 255, .2);
+    height: 20rem;
+    width: 20rem;
+    align-content: center;
+    line-height: 20rem;
+}
+.title{
+    font-size: 4em;
+}
