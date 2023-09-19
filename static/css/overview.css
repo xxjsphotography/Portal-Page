@@ -1,0 +1,16 @@
+.header-img {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    background-size: cover;
+    overflow: hidden;
+}
+.logo{
+    width: 50%;
+}
+.text{
+    width: 50%;
+    height: 90%;
+    text-align: left;
+    overflow-y: scroll;
+}
