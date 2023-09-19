@@ -1,12 +1,15 @@
 .header-img {
     position: relative;
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     background-size: cover;
     overflow: hidden;
 }
+.intro{
+    height: 50%;
+}
 .logo{
-    width: 50%;
+    /* width: 50%; */
 }
 .text{
     width: 50%;
