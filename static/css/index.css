@@ -1,5 +1,5 @@
 .content {
-    background-image: url("/static/images/background.jpg");
+    /* background-image: url("/static/images/background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -18,4 +18,14 @@
 }
 .title{
     font-size: 4em;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    /* height: 4em; */
+    overflow: hidden;
+    background-color: #2f90b9;
 }

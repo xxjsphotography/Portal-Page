@@ -38,53 +38,104 @@
         </div>
     </nav>
     <div class="content position-relative">
-        <div class="card text-white rounded m-auto text-center w-auto animate__animated animate__zoomInDown">
+        <!--<div class="card text-white rounded m-auto text-center w-auto animate__animated animate__zoomInDown">
             <h1 class="title animate__animated animate__delay-1s animate__backInLeft">——— 影像时光社 ———</h1>
             <p class="fs-1 animate__animated animate__delay-2s animate__backInUp">让我们一起用镜头，记录生活的精彩瞬间</p>
-        </div>
+        </div>-->
 
-    </div>
-    <!-- 页脚 -->
-    <footer class="footer">
-        <div class="links">
-            <div class="links-left">
-                <h2 class="fs-2">友情链接</h2>
-                <ul>
-                    <li><a href="#">Lorem.</a></li>
-                    <li><a href="#">Lorem.</a></li>
-                    <li><a href="#">Lorem.</a></li>
-                    <li><a href="#">Lorem.</a></li>
-                </ul>
+        <link rel="preconnect" href="//fonts.googleapis.com">
+        <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+        <link href="//fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
+        <script src="//unpkg.com/@triggerjs/trigger" defer></script>
+        <style>
+            .title {
+                font-family: 'Noto Serif SC', serif;
+                font-size: calc(5rem + var(--size) * 1px);
+                text-align: center;
+                /* margin: 90vh 0; */
+
+                opacity: var(--opacity);
+            }
+
+            #container {
+                margin: 100vh 0;
+                text-align: center;
+            }
+
+            #content {
+                /* padding: 20vh 0; */
+                --gopacity: 0.3;
+                opacity: var(--gopacity);
+            }
+
+            .content span {
+                --copacity: 0.2;
+                opacity: var(--copacity);
+                font-size: calc(1rem + var(--csize) * 1px);
+            }
+
+            #h span {
+                opacity: 1;
+            }
+
+            .next {
+                display: block;
+                margin-top: 2.22rem;
+            }
+        </style>
+        <div id="container">
+            <div class="ttitle" tg-name="size" tg-from="0" tg-to="100" tg-step="1">
+                <h1 class="title" tg-name="opacity" tg-from="0" tg-to="1" tg-step="0.2">影像时光社</h1>
             </div>
-            <div class="links-left">
-                <h2 class="fs-2">友情链接</h2>
-                <ul>
-                    <li><a href="#">Lorem.</a></li>
-                    <li><a href="#">Lorem.</a></li>
-                    <li><a href="#">Lorem.</a></li>
-                    <li><a href="#">Lorem.</a></li>
-                </ul>
-            </div>
-            <div class="links-right">
-                <h2 class="fs-2">联系方式</h2>
-                <ul>
-                    <li><span>社长微信：</span><a href="#">wxid2007159357</a></li>
-                    <li>副社长微信：<a href="#">120237808</a></li>
-                    <li>助手微信：<a href="#">a1578603217</a></li>
-                    <!-- <li>网站制作：<a href="https://view.waterspo.top">Sgss</a></li> -->
-                </ul>
-            </div>
-            <div class="links-right">
-                <h2 class="fs-2">QRCode</h2>
-                <img src="#" alt="" srcset="" width="128" height="128" />
+            <div class="content" tg-name="gopacity" tg-from="0" tg-to="1" tg-step="0.5" tg-ref="content">
+                <span id="h" tg-name="copacity" tg-follow="content" tg-filter="0.5!" tg-map="0.5: 1"><span tg-name="csize"
+                        tg-follow="content" tg-filter="0.5!" tg-map="0.5:40">让我们一起用镜头，</span></span>
+                <span id="h" tg-name="copacity" tg-follow="content" tg-filter="1!" tg-map="1: 40" class="next"><span
+                        tg-name="csize" tg-follow="content" tg-filter="1!" tg-map="1:40">记录生活的精彩瞬间</span></span>
             </div>
         </div>
-        <span class="copy">&copy;2023 广州市信息技术学校同和校区影像时光社 版权所有</span>
-    </footer>
-    <!-- bs -->
-    <script src="/static/js/bootstrap.bundle.min.js"></script>
-    <!-- 自定义脚本 -->
-    <script src="/static/js/index.js"></script>
+        <br>
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="links">
+                <div class="links-left">
+                    <h2 class="fs-2">友情链接</h2>
+                    <ul>
+                        <li><a href="#">Lorem.</a></li>
+                        <li><a href="#">Lorem.</a></li>
+                        <li><a href="#">Lorem.</a></li>
+                        <li><a href="#">Lorem.</a></li>
+                    </ul>
+                </div>
+                <div class="links-left">
+                    <h2 class="fs-2">友情链接</h2>
+                    <ul>
+                        <li><a href="#">Lorem.</a></li>
+                        <li><a href="#">Lorem.</a></li>
+                        <li><a href="#">Lorem.</a></li>
+                        <li><a href="#">Lorem.</a></li>
+                    </ul>
+                </div>
+                <div class="links-right">
+                    <h2 class="fs-2">联系方式</h2>
+                    <ul>
+                        <li><span>社长微信：</span><a href="#">wxid2007159357</a></li>
+                        <li>副社长微信：<a href="#">120237808</a></li>
+                        <li>助手微信：<a href="#">a1578603217</a></li>
+                        <!-- <li>网站制作：<a href="https://view.waterspo.top">Sgss</a></li> -->
+                    </ul>
+                </div>
+                <div class="links-right">
+                    <h2 class="fs-2">QRCode</h2>
+                    <img src="#" alt="" srcset="" width="128" height="128" />
+                </div>
+            </div>
+            <span class="copy">&copy;2023 广州市信息技术学校同和校区影像时光社 版权所有</span>
+        </footer>
+        <!-- bs -->
+        <script src="/static/js/bootstrap.bundle.min.js"></script>
+        <!-- 自定义脚本 -->
+        <script src="/static/js/index.js"></script>
 </body>
 
 </html>
